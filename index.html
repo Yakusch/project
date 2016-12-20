@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+		<title> Merry Christmas </title>
+	 <link rel="stylesheet" type="text/css" href="style.css">
+
+	 <link rel="stylesheet" type="text/css" href="animate.css">
+
+	 <script src="https://yastatic.net/jquery/3.1.0/jquery.min.js"> </script>
+
+<script type="text/javascript"> 
+<!-- скрипт для снега -->
+imageDir = "http://mvcreative.ru/example/6/2/snow/"; 
+sflakesMax = 65; 
+sflakesMaxActive = 65; 
+svMaxX = 2; 
+svMaxY = 6; 
+ssnowStick = 1; 
+ssnowCollect = 0; 
+sfollowMouse = 1; 
+sflakeBottom = 0; 
+susePNG = 1; 
+sflakeTypes = 5; 
+sflakeWidth = 15; 
+sflakeHeight = 15; 
+</script> 
+<script type="text/javascript" src="http://mvcreative.ru/example/6/2/snow.js"></script>
+</head>
+
+<body link="white" vlink="white" alink="white">
+<script type="text/javascript" src="common.js"></script>
+
+<section class="sect_1">
+
+	<a href="images/snow.txt" style="text-decoration:none">
+	<div class="header_text">
+		Merry Christmas
+	</div></a>
+
+</section>
+<br><br><br>
+<section class="sect_2" >
+	
+	<div class="text_1" >
+
+		<h1 class="animated mov"> Best Christmas movies</h1>
+
+	</div><br><br><br>
+
+	<div class="pic_1" align="center">
+		<div class="animated mov1">
+			<img src="images/3.jpg" > <br>	
+			<h1 class="animated fadeInDown"> Ангел по соседству </h1> <br><br>
+		</div>
+		<div class="animated mov2">
+			<img src="images/4.jpg">	<br>
+			<h1> Путишествие к рождественской звезде</h1><br><br>
+		</div>
+		<div class="animated mov3">
+			<img src="images/5.jpg">	<br>
+			<h1> Один дома</h1><br><br>
+		</div>
+		<div class="animated mov4">
+			<img src="images/6.jpg">	<br>
+			<h1> Подарок на рождество 2</h1><br><br>
+		</div>
+		<div class="animated mov5">
+			<img src="images/7.jpg"> <br>
+			<h1> Рождественская история </h1>	
+		</div>
+
+	</div>
+</section>
+	
+<script type="text/javascript">
+	$(window).scroll(function() {
+    $('.mov').each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+750) {
+        $(this).addClass('flip');
+      }
+    });
+  });
+	$(window).scroll(function() {
+    $('.mov1').each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+450) {
+        $(this).addClass('fadeInDown');
+      }
+    });
+  });
+	$(window).scroll(function() {
+    $('.mov2').each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+450) {
+        $(this).addClass('zoomInDown');
+      }
+    });
+  });
+	$(window).scroll(function() {
+    $('.mov3').each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+450) {
+        $(this).addClass('rollIn');
+      }
+    });
+  });
+	$(window).scroll(function() {
+    $('.mov4').each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+450) {
+        $(this).addClass('slideInLeft');
+      }
+    });
+  });
+	$(window).scroll(function() {
+    $('.mov5').each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+450) {
+        $(this).addClass('rubberBand');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
